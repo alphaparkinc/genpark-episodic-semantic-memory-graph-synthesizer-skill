@@ -1,0 +1,39 @@
+{
+  "name": "genpark-episodic-semantic-memory-graph-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Hierarchical episodic and semantic user profile memory graph synthesizer extracting entity triples and temporal knowledge.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-memory",
+  "tags": [
+    "agent-memory",
+    "mem0-style",
+    "zep-ai",
+    "knowledge-graph",
+    "temporal-memory"
+  ],
+  "inputs": {
+    "user_id": {
+      "type": "string"
+    },
+    "new_interaction_text": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "memory_update_id": {
+      "type": "string"
+    },
+    "extracted_facts": {
+      "type": "array"
+    },
+    "memory_graph_nodes_count": {
+      "type": "integer"
+    },
+    "user_knowledge_graph_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
